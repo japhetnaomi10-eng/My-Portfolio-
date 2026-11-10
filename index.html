@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Japhet Naomi | Designer & Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--soft:#fdf1f6;--card:#fff;--text:#1b2540;--muted:#5b6784;--pink:#e8528f;--pink2:#f9c6dc;--blue:#2f6fe4;--blue2:#dbe8ff;--line:#ecd9e3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Poppins,system-ui,sans-serif;line-height:1.65}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;margin:0;line-height:1.15}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.2rem;color:var(--pink)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.9rem;font-weight:500}
+nav ul a:hover{color:var(--pink)}
+@media(max-width:560px){nav ul li:not(:last-child){display:none}}
+
+.hero{background:linear-gradient(135deg,var(--soft),var(--blue2));padding:56px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.photo{order:-1;max-width:280px;margin:0 auto}}
+.tag{display:inline-block;background:var(--card);color:var(--blue);border:1px solid var(--line);padding:5px 14px;border-radius:99px;font-size:.8rem;font-weight:600;margin-bottom:18px}
+h1{font-size:clamp(2.3rem,6vw,3.6rem)}
+h1 span{color:var(--pink)}
+.hero p{color:var(--muted);max-width:480px;margin:18px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 26px;border-radius:99px;font-weight:600;font-size:.95rem;display:inline-block}
+.p{background:var(--pink);color:#fff}
+.s{background:var(--card);color:var(--blue);border:2px solid var(--blue)}
+.btn:hover{transform:translateY(-2px)}
+
+.photo{position:relative;aspect-ratio:1;max-width:400px;width:100%;justify-self:center}
+.photo::before{content:"";position:absolute;inset:14px -14px -14px 14px;border-radius:32px;background:var(--pink2)}
+.photo::after{content:"";position:absolute;width:70px;height:70px;border-radius:50%;background:var(--blue);right:-14px;top:-14px;opacity:.9}
+.photo img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:50% 20%;border-radius:32px;border:5px solid #fff;display:block}
+
+section{padding:72px 0}
+.lab{color:var(--pink);font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:18px}
+.about p{max-width:640px;color:var(--muted);font-size:1.05rem}
+.alt{background:var(--soft)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px}
+.ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:1.4rem;background:var(--pink2);margin-bottom:14px}
+.card:nth-child(even) .ic{background:var(--blue2)}
+.card h3{font-size:1.2rem;margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:.92rem}
+
+.work{background:linear-gradient(135deg,var(--pink),var(--blue));color:#fff;border-radius:28px;padding:44px 32px;text-align:center}
+.work h2{color:#fff}
+.work p{max-width:480px;margin:0 auto 24px}
+.work .btn{background:#fff;color:#c2336f}
+
+.contact .grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.ct{display:flex;gap:16px;align-items:center}
+.ct .ic{margin:0}
+.ct:hover{border-color:var(--pink)}
+.ct b{display:block;font-size:.8rem;color:var(--muted);font-weight:500}
+.ct span{font-weight:600;word-break:break-all}
+
+footer{text-align:center;padding:28px 22px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top">Japhet Naomi</a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <span class="tag">Open to new projects</span>
+    <h1>Hi, I’m <span>Japhet Naomi</span></h1>
+    <p>Graphic designer, web developer and crochet artist, turning imagination into things you can see, use and wear.</p>
+    <div class="btns">
+      <a class="btn p" href="https://njdesigns24.my.canva.site/" target="_blank" rel="noopener">View my work</a>
+      <a class="btn s" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <div class="photo"><img src="naomi.jpg" alt="Portrait of Japhet Naomi"></div>
+</div></header>
+
+<section class="about" id="about"><div class="wrap">
+  <div class="lab">About me</div>
+  <h2>Imagination, built.</h2>
+  <p>I’ve loved coding since I was a kid. I’ve always been fascinated by what we can build with our imagination. Today I bring that curiosity to design, websites, fashion and handmade crochet pieces.</p>
+</div></section>
+
+<section class="alt" id="skills"><div class="wrap">
+  <div class="lab">What I do</div>
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card"><div class="ic">🎨</div><h3>Graphic Design</h3><p>Brand visuals, flyers and creative layouts with a clean, polished finish.</p></div>
+    <div class="card"><div class="ic">💻</div><h3>Web Development</h3><p>Junior web developer building responsive, modern websites.</p></div>
+    <div class="card"><div class="ic">🧶</div><h3>Crochet Art</h3><p>Handmade crochet pieces crafted with detail and care.</p></div>
+    <div class="card"><div class="ic">👗</div><h3>Fashion</h3><p>Fashion specialist with an eye for style, shape and colour.</p></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="work">
+    <h2>See my portfolio</h2>
+    <p>Browse my designs and projects, all in one place.</p>
+    <a class="btn" href="https://njdesigns24.my.canva.site/" target="_blank" rel="noopener">Open portfolio →</a>
+  </div>
+</div></section>
+
+<section class="alt contact" id="contact"><div class="wrap">
+  <div class="lab">Contact</div>
+  <h2>Let’s work together</h2>
+  <div class="grid">
+    <a class="card ct" href="https://wa.me/2348022792833" target="_blank" rel="noopener">
+      <div class="ic">💬</div><div><b>WhatsApp</b><span>0802 279 2833</span></div>
+    </a>
+    <a class="card ct" href="mailto:japhetnaomi10@gmail.com">
+      <div class="ic">✉️</div><div><b>Email</b><span>japhetnaomi10@gmail.com</span></div>
+    </a>
+  </div>
+</div></section>
+
+<footer>© 2026 Japhet Naomi. All rights reserved.</footer>
+</body>
+</html>
